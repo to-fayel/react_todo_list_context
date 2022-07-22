@@ -1,6 +1,6 @@
 import React from 'react';
 import Context from '../contexts/todoContext';
-// import ClearTodo from './ClearTodo';
+import ClearTodo from './ClearTodo';
 import TodoItem from './TodoItem';
 
 function ShowCase() {
@@ -9,13 +9,9 @@ function ShowCase() {
         {({ todos }) => (
           <div>
             {todos.length > 0 && <TodoItem />}
-            {/* <ClearTodo
-            clearTodos={clearTodos}
-            pending={pending}
-            message={message}
-            removeMessage={removeMessage}
+            <ClearTodo
             todos={todos}
-          /> */}
+            />
           </div>
         )}
       </Context.Consumer>
